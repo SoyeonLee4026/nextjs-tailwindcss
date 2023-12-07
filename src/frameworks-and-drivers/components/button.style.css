@@ -1,0 +1,39 @@
+.primary_contained {
+  @apply bg-brand-300 text-background-white enabled:hover:bg-brand-400 disabled:bg-gray-300 dark:bg-brand-200 dark:text-background-black dark:enabled:hover:bg-brand-200 dark:disabled:bg-gray-500;
+}
+
+.primary_outline {
+  @apply border border-solid border-brand-200 text-brand-400 enabled:hover:bg-brand-50 disabled:border-gray-100 disabled:text-gray-400;
+}
+
+.mono_contained {
+  @apply bg-gray-50 text-gray-600 disabled:text-gray-300 dark:bg-gray-800 dark:text-gray-100 dark:disabled:text-gray-500;
+}
+
+.size_L {
+  @apply button_cha h-12 py-2.5 px-4;
+}
+
+.size_M {
+  @apply button_medium h-12 py-2.5 px-4;
+}
+
+.size_S {
+  @apply button_medium h-12 py-2.5 px-4;
+}
+
+.size_mb_l {
+  @apply sm:button_cha sm:h-12 sm:py-2.5 sm:px-4;
+}
+
+.sizee_mb_m {
+  @apply sm:button_medium sm:h-10 md:py-2.5 md:px-4;
+}
+
+.sizee_mb_s {
+  @apply sm:button_medium sm:h-12 sm:py-2.5 sm:px-4;
+}
+
+.fullwidth {
+  @apply w-full;
+}

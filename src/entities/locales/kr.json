@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "title": "SarcoFit",
+    "description": "SarcoFit - 의료진용 웹 서비스."
+  },
+  "page": {
+    "error": {
+      "404": "페이지를 찾을 수 없습니다."
+    },
+    "signIn": {
+      "title": "로그인",
+      "id_label": {
+        "text": "아이디"
+      },
+      "id_input": {
+        "placeholder": "이메일을 입력해 주세요.",
+        "error": {
+          "no_email": "이메일을 입력해 주세요.",
+          "invalid_email": "잘못된 이메일 주소입니다."
+        }
+      },
+      "password_label": {
+        "text": "비밀번호"
+      },
+      "password_input": {
+        "enter": "비밀번호를 입력해 주세요.",
+        "error": {
+          "no_password": "비밀번호를 입력해 주세요.",
+          "invalid_password": "잘못된 비밀번호 형식입니다."
+        }
+      },
+      "sign_in_button": {
+        "text": "로그인"
+      },
+      "find_id": {
+        "text": "아이디 찾기"
+      },
+      "find_password": {
+        "text": "비밀번호 찾기"
+      },
+      "sign_up": {
+        "text": "회원가입"
+      },
+      "terms_of_use": {
+        "text": "이용약관"
+      },
+      "privacy_policy": {
+        "text": "개인정보 처리방침"
+      }
+    }
+  }
+}

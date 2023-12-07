@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "title": "SarcoFit",
+    "description": "SarcoFit - Web service for medical experts."
+  },
+  "page": {
+    "error": {
+      "404": "Page not found."
+    },
+    "signIn": {
+      "title": "Sign-in",
+      "id_label": {
+        "text": "ID"
+      },
+      "id_input": {
+        "placeholder": "Please enter your e-mail.",
+        "error": {
+          "no_email": "Please enter your e-mail.",
+          "invalid_email": "Invalid email. Please check the email again."
+        }
+      },
+      "password_label": {
+        "text": "Password"
+      },
+      "password_input": {
+        "enter": "Please enter your password.",
+        "error": {
+          "no_password": "Please enter your password.",
+          "invalid_password": "Invalid password format."
+        }
+      },
+      "sign_in_button": {
+        "text": "Sign-in"
+      },
+      "find_id": {
+        "text": "Find e-mail"
+      },
+      "find_password": {
+        "text": "Forgot password?"
+      },
+      "sign_up": {
+        "text": "Sign-up"
+      },
+      "terms_of_use": {
+        "text": "Terms of Use"
+      },
+      "privacy_policy": {
+        "text": "Privacy Policy"
+      }
+    }
+  }
+}
