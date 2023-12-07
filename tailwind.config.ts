@@ -100,7 +100,7 @@ const config: Config = {
     },
   },
   plugins: [
-    plugin(function ({ addBase, theme }: any) {
+    plugin(function ({ addBase, addComponents }: any) {
       addBase({
         ".h3": { fontSize: "1.875rem", fontStyle: "normal", fontWeight: 500 },
         ".h4": { fontSize: "1.5rem", fontStyle: "normal", fontWeight: 700 },
@@ -126,5 +126,6 @@ const config: Config = {
       });
     }),
   ],
+  safelist: [...[11.25, 10].map((width) => `w-[${width}rem]`), ...[7.15, 6.35].map((height) => `h-[${height}rem]`)],
 };
 export default config;
