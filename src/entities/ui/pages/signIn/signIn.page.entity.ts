@@ -1,4 +1,8 @@
-import { ButtonEntity, ImageEntity, LayoutEntity } from "../../components/components.entity";
+import {
+  ButtonEntity,
+  ImageEntity,
+  LayoutEntity,
+} from "../../components/components.entity";
 import {
   FIND_ID_LINK,
   FIND_PASSWORD_LINK,
@@ -38,14 +42,14 @@ type SignInEntityType = {
                   placeholder: string;
                   error_text: Record<string, string>;
                   PASSWORD_ICON: Record<string, string>;
-                }
+                },
               ];
             },
             signInButton: {
               text: string;
               href: string;
               option: ButtonEntity;
-            }
+            },
           ];
         },
         {
@@ -53,60 +57,25 @@ type SignInEntityType = {
           formFooter: [
             {
               layout: LayoutEntity;
-              left: [findIdLink: Record<string, string>, findPasswordLink: Record<string, string>];
+              left: [
+                findIdLink: Record<string, string>,
+                findPasswordLink: Record<string, string>,
+              ];
             },
             {
               layout: LayoutEntity;
               right: [signUpLink: Record<string, string>];
-            }
+            },
           ];
-        }
+        },
       ];
     },
     {
       layout: LayoutEntity;
-      cardFooter: [termsOfUseLink: Record<string, string>, privacyPolicyLink: Record<string, string>];
-    }
+      cardFooter: [
+        termsOfUseLink: Record<string, string>,
+        privacyPolicyLink: Record<string, string>,
+      ];
+    },
   ];
-};
-
-export const SignInEntity: SignInEntityType = {
-  layout: "fullscreen-center",
-  metaData: META_DATA,
-  signInPage: [
-    {
-      layout: "center",
-      id : "card-body",
-      cardBody: [
-        LOGO,
-        {
-          layout: "column",
-          formBody: [
-            {
-              layout: "column",
-              inputBoxes: [ID_INPUT, PASSWORD_INPUT],
-            },
-            SIGN_IN_BUTTON,
-          ],
-        },
-        {
-          layout: "space-between",
-          formFooter: [
-            {
-              layout: "center",
-              left: [FIND_ID_LINK, FIND_PASSWORD_LINK],
-            },
-            {
-              layout: "center",
-              right: [SIGN_UP_LINK],
-            },
-          ],
-        },
-      ],
-    },
-    {
-      layout: "center",
-      cardFooter: [TERMS_OF_USE_LINK, PRIVACY_POLICY_LINK],
-    },
-  ],
 };
