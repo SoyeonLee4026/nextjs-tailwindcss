@@ -1,14 +1,6 @@
+import { ButtonEntity } from "@/entities/ui/components/components.entity";
 import { cn } from "../utils/classname";
 import "./button.style.css";
-
-/** 버튼의 속성 type */
-export type ButtonType = {
-  size: "L" | "M" | "S";
-  mbsize?: "L" | "M" | "S";
-  color: "primary" | "mono";
-  variant: "contained" | "outline";
-  fullwidth?: boolean;
-};
 
 export const BUTTON_COLORS = {
   primary: {
@@ -40,7 +32,7 @@ export default function Button({
   fullwidth,
   mbsize,
   ...props
-}: ButtonType & React.ButtonHTMLAttributes<HTMLButtonElement>) {
+}: ButtonEntity & React.ButtonHTMLAttributes<HTMLButtonElement>) {
   return (
     <button
       className={cn(
